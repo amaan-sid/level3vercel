@@ -3,7 +3,8 @@ const path = require('path');
 const url = require('url');
 
 // SQLite DB path (relative to current function)
-const DB_PATH = path.join(__dirname, 'todos.db');
+const DB_PATH = ':memory:';
+
 
 // Helper to connect to SQLite
 function connectToDatabase() {
